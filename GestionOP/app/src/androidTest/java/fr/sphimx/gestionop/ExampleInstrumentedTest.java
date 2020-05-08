@@ -1,4 +1,4 @@
-package com.example.gestionop;
+package fr.sphimx.gestionop;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.example.gestionop", appContext.getPackageName());
+        assertEquals("fr.sphimx.gestionop", appContext.getPackageName());
     }
 }

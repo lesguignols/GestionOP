@@ -1,4 +1,4 @@
-package com.example.gestionop;
+package fr.sphimx.gestionop;
 
 import org.junit.Test;
 

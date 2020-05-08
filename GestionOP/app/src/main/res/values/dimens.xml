@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="name_op">20dp</dimen>
+    <dimen name="poster">20dp</dimen>
+
+
+    <dimen name="margin_name_op">20dp</dimen>
+    <dimen name="size_name_op">30dp</dimen>
+    <dimen name="margin_op">20dp</dimen>
+    <dimen name="size_date_op">10dp</dimen>
+    <dimen name="size_description_op">18dp</dimen>
+    <dimen name="size_menu_description">20dp</dimen>
+    <dimen name="size_margin_activity">20dp</dimen>
+    <dimen name="size_marge_relativelayout">5dp</dimen>
+    <dimen name="size_spent_op">12dp</dimen>
+    <dimen name="size_income_op">12dp</dimen>
+    <dimen name="size_name_member_notice">20dp</dimen>
+    <dimen name="size_firstname_member_notice">16dp</dimen>
+    <dimen name="size_description_notice">15dp</dimen>
+    <dimen name="size_menu_op">20dp</dimen>
+    <dimen name="size_notice_op">20dp</dimen>
 </resources>

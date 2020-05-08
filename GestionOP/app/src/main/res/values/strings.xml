@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">GestionOP</string>
+    <string name="default_op_name">Default OP name</string>
+    <string name="default_date">01/01/2020</string>
+    <string name="defaut_op_description">Description de l\'OP</string>
+    <string name="op_spent">Dépense de l\'OP : </string>
+    <string name="op_income">Recette de l\'OP : </string>
+    <string name="default_menu_description">Description du menu</string>
+    <string name="menu_price">Prix :</string>
+    <string name="menu_adherent">Adhérent : </string>
+    <string name="menu_drink">Boisson :</string>
+    <string name="default_menu_price">0.00€</string>
+    <string name="default_menu_drink">Oui</string>
+    <string name="default_menu_adherent">Non</string>
+    <string name="default_op_spent">0.00€</string>
+    <string name="default_op_income">0.00€</string>
+    <string name="default_name_member_notice">DefaultName</string>
+    <string name="default_firstName_member_notice">DefaultFirstName</string>
+    <string name="default_description_notice">Pas aimé</string>
+    <string name="rate_notice">3.5</string>
+    <string name="default_rate_notice"> / 5</string>
+    <string name="menu_op"><u>Les différents menus de l\'OP :</u></string>
+    <string name="notice_op"><u>Avis :</u></string>
+    <string name="general_mark_op"><u>Note générale : </u></string>
+    <string name="mark_op">0 / 5</string>
 </resources>

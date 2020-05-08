@@ -2,4 +2,138 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:id="@+id/poster_op"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:src="@drawable/crepe"/>
+
+        <TextView
+            android:id="@+id/name_op"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/size_name_op"
+            android:text="@string/default_op_name"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/date_op"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/size_date_op"
+            android:text="@string/defaut_op_description"
+            android:layout_marginLeft="15dp"
+            android:textStyle="italic"/>
+
+        <TextView
+            android:id="@+id/description_op"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/size_description_op"
+            android:text="@string/defaut_op_description"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#FF909090"
+            android:layout_marginTop="10dp"/>
+
+        <ListView
+            android:id="@+id/menu_op"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#FF909090"
+            android:layout_marginTop="10dp"/>
+
+        <ListView
+            android:id="@+id/notice_op"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#FF909090"
+            android:layout_marginTop="10dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/default_spent_op"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/size_spent_op"
+                android:text="@string/op_spent"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/op_spent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/size_spent_op"
+                android:text="@string/default_op_spent"
+                android:layout_toRightOf="@id/default_spent_op"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/default_income_op"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/size_income_op"
+                android:text="@string/op_income"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/op_income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/size_income_op"
+                android:text="@string/default_op_spent"
+                android:layout_toRightOf="@id/default_income_op"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#FF909090"
+            android:layout_marginTop="10dp"/>
+
+        <ListView
+            android:id="@+id/menussold_op"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#FF909090"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
 </ScrollView>

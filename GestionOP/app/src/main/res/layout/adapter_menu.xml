@@ -1,6 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/size_margin_activity">
+
+    <TextView
+        android:id="@+id/menu_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/default_menu_description"
+        android:textSize="@dimen/size_menu_description"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_marge_relativelayout">
+
+        <TextView
+            android:id="@+id/menu_pri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/menu_price"/>
+
+        <TextView
+            android:id="@+id/menu_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_menu_price"
+            android:layout_toRightOf="@id/menu_pri"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_marge_relativelayout">
+
+        <TextView
+            android:id="@+id/menu_dri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/menu_drink"/>
+
+        <TextView
+            android:id="@+id/menu_drink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_menu_drink"
+            android:layout_toRightOf="@id/menu_dri"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_marge_relativelayout">
+
+        <TextView
+            android:id="@+id/menu_adh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/menu_adherent"/>
+
+        <TextView
+            android:id="@+id/menu_adherent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_menu_adherent"
+            android:layout_toRightOf="@id/menu_adh"/>
+
+    </RelativeLayout>
 
 </LinearLayout>
