@@ -1,4 +1,4 @@
-package fr.sphimx.gestionop.models;
+package fr.yann.gestionop.models;
 
 public class Adherent {
 

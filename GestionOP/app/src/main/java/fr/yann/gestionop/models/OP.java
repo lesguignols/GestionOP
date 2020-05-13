@@ -1,4 +1,4 @@
-package fr.sphimx.gestionop.models;
+package fr.yann.gestionop.models;
 
 import java.util.List;
 

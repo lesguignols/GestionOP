@@ -1,6 +1,4 @@
-package fr.sphimx.gestionop.models;
-
-import java.lang.reflect.Member;
+package fr.yann.gestionop.models;
 
 public class Notice {
 

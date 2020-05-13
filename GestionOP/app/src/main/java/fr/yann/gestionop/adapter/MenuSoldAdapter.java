@@ -1,4 +1,4 @@
-package fr.sphimx.gestionop.adapter;
+package fr.yann.gestionop.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -11,8 +11,8 @@ import android.widget.TextView;
 
 import java.util.List;
 
-import fr.sphimx.gestionop.R;
-import fr.sphimx.gestionop.models.MenuSold;
+import fr.yann.gestionop.R;
+import fr.yann.gestionop.models.MenuSold;
 
 public class MenuSoldAdapter extends BaseAdapter {
 

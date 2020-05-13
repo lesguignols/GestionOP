@@ -1,20 +1,16 @@
-package fr.sphimx.gestionop.adapter;
+package fr.yann.gestionop.adapter;
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import java.util.List;
-import java.util.zip.Inflater;
 
-import fr.sphimx.gestionop.OPlistActivity;
-import fr.sphimx.gestionop.R;
-import fr.sphimx.gestionop.models.OP;
+import fr.yann.gestionop.R;
+import fr.yann.gestionop.models.OP;
 
 public class OPAdapter extends BaseAdapter {
 
