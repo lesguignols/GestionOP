@@ -1,11 +1,9 @@
-package fr.sphimx.gestionop;
+package fr.yann.gestionop;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.widget.ListViewAutoScrollHelper;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
@@ -16,10 +14,10 @@ import android.widget.TextView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-import fr.sphimx.gestionop.adapter.MenuAdapter;
-import fr.sphimx.gestionop.adapter.MenuSoldAdapter;
-import fr.sphimx.gestionop.adapter.NoticeAdapter;
-import fr.sphimx.gestionop.models.OP;
+import fr.yann.gestionop.adapter.MenuAdapter;
+import fr.yann.gestionop.adapter.MenuSoldAdapter;
+import fr.yann.gestionop.adapter.NoticeAdapter;
+import fr.yann.gestionop.models.OP;
 
 public class OPActivity extends AppCompatActivity {
 

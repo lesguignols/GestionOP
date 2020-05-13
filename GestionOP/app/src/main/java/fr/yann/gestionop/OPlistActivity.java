@@ -1,4 +1,4 @@
-package fr.sphimx.gestionop;
+package fr.yann.gestionop;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,7 +9,7 @@ import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import fr.sphimx.gestionop.adapter.OPAdapter;
+import fr.yann.gestionop.adapter.OPAdapter;
 
 public class OPlistActivity extends AppCompatActivity {
 

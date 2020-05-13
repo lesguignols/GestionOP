@@ -1,0 +1,3 @@
+Le package "adapter" contient toutes les classes permettant de mettre en place les éléments dans les différents ListView.
+Le package "models" contient toutes les classes des "objets" qui représentent les différentes OP, les adhérents, les avis, les menus vendus...
+Le reste des classes permettent le fonctionnement des différentes pages de l'application.

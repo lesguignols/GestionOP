@@ -1,4 +1,4 @@
-package fr.sphimx.gestionop;
+package fr.yann.gestionop;
 
 import org.junit.Test;
 

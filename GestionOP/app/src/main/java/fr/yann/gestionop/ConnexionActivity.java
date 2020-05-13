@@ -1,8 +1,7 @@
-package fr.sphimx.gestionop;
+package fr.yann.gestionop;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -12,11 +11,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.ArrayList;
 import java.util.List;
 
-import fr.sphimx.gestionop.models.Adherent;
-import fr.sphimx.gestionop.models.Menu;
-import fr.sphimx.gestionop.models.MenuSold;
-import fr.sphimx.gestionop.models.Notice;
-import fr.sphimx.gestionop.models.OP;
+import fr.yann.gestionop.models.Adherent;
+import fr.yann.gestionop.models.Menu;
+import fr.yann.gestionop.models.MenuSold;
+import fr.yann.gestionop.models.Notice;
+import fr.yann.gestionop.models.OP;
 
 public class ConnexionActivity extends AppCompatActivity {
 
