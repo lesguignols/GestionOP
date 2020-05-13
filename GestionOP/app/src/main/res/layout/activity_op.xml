@@ -1,18 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="20dp">
+        android:layout_height="match_parent">
 
-        <ImageView
-            android:id="@+id/poster_op"
+        <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="200dp"
-            android:src="@drawable/crepe"/>
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/poster_op"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:src="@drawable/crepe"
+                android:layout_marginTop="20dp"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/cancel_button_op"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                app:backgroundTint="#FFFFFF"
+                app:srcCompat="@drawable/ic_arrow_back_black_24dp"
+                tools:ignore="VectorDrawableCompat" />
+
+        </RelativeLayout>
 
         <TextView
             android:id="@+id/name_op"
@@ -20,7 +39,7 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/size_name_op"
             android:text="@string/default_op_name"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="30dp"
             android:textStyle="bold"/>
 
         <TextView
@@ -29,7 +48,7 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/size_date_op"
             android:text="@string/defaut_op_description"
-            android:layout_marginLeft="15dp"
+            android:layout_marginLeft="35dp"
             android:textStyle="italic"/>
 
         <TextView
@@ -38,77 +57,14 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/size_description_op"
             android:text="@string/defaut_op_description"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"/>
-
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="2dp"
-            android:background="#FF909090"
-            android:layout_marginTop="10dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/menu_op"
-            android:textSize="@dimen/size_menu_op"
-            android:textStyle="bold|italic" />
-
-        <ListView
-            android:id="@+id/menu_op"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"/>
-
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="2dp"
-            android:background="#FF909090"
-            android:layout_marginTop="10dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/notice_op"
-            android:textSize="@dimen/size_notice_op"
-            android:textStyle="bold|italic"/>
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:id="@+id/general_mark_op"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/general_mark_op"
-                android:textStyle="bold"/>
-
-            <TextView
-                android:id="@+id/mark_op"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/mark_op"
-                android:layout_toRightOf="@id/general_mark_op"/>
-
-        </RelativeLayout>
-
-        <ListView
-            android:id="@+id/notice_op"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"/>
-
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="2dp"
-            android:background="#FF909090"
+            android:layout_marginLeft="30dp"
             android:layout_marginTop="10dp"/>
 
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp">
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp">
 
             <TextView
                 android:id="@+id/default_spent_op"
@@ -157,17 +113,128 @@
             android:background="#FF909090"
             android:layout_marginTop="10dp"/>
 
-        <ListView
-            android:id="@+id/menussold_op"
+        <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
 
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="2dp"
-            android:background="#FF909090"
-            android:layout_marginTop="10dp"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl_menu_op">
 
+                <TextView
+                    android:id="@+id/different_menu_op"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_op"
+                    android:textSize="@dimen/size_menu_op"
+                    android:textStyle="bold|italic"/>
+
+                <ListView
+                    android:id="@+id/menu_op"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/different_menu_op"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:id="@+id/rl_notice_op">
+
+                <TextView
+                    android:id="@+id/default_notice_op"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/notice_op"
+                    android:textSize="@dimen/size_notice_op"
+                    android:textStyle="bold|italic"/>
+
+                <RelativeLayout
+                    android:id="@+id/default_mark_op"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/default_notice_op">
+
+                    <TextView
+                        android:id="@+id/general_mark_op"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_mark_op"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/mark_op"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mark_op"
+                        android:layout_toRightOf="@id/general_mark_op"/>
+
+                </RelativeLayout>
+
+                <ListView
+                    android:id="@+id/notice_op"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/default_mark_op"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:id="@+id/rl_menusold_op">
+
+                <TextView
+                    android:id="@+id/default_menusold_op"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menusold"
+                    android:textSize="20dp"
+                    android:textStyle="bold|italic"/>
+
+                <ListView
+                    android:id="@+id/menussold_op"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/default_menusold_op" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/menu_op_button"
+                android:text="@string/different_menu"
+                android:enabled="false">
+
+            </Button>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/notice_op_button"
+                android:text="@string/notice_op_button">
+
+            </Button>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/menusold_op_button"
+                android:text="@string/menu_spent">
+
+            </Button>
+        </GridLayout>
     </LinearLayout>
 </ScrollView>

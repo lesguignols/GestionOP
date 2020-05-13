@@ -31,7 +31,11 @@ public class OP {
         for (Notice n: this.notices){
             sum = sum + n.getMark();
         }
-        this.general_mark = new Double(sum / notices.size());
+        if(notices.size()!=0){
+            this.general_mark = new Double(sum / notices.size());
+        } else{
+            this.general_mark = 0.0;
+        }
     }
 
     public int getId_op() {

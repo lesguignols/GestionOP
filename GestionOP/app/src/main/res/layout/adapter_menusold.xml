@@ -1,6 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:id="@+id/adapter_menusold">
+
+    <TextView
+        android:id="@+id/description_menusold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/default_menu_description"
+        android:textSize="@dimen/size_menu_description"
+        android:layout_marginBottom="10dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_drink_menusold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/default_drink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_drink"/>
+
+        <TextView
+            android:id="@+id/drink_menusold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/default_drink"
+            android:text="@string/drink_menusold"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_adherent_menusold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/photo_adherent_menusold"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_person_black_24dp"/>
+
+        <TextView
+            android:id="@+id/name_adherent_menusold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_name_member_notice"
+            android:textSize="@dimen/size_name_member_notice"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/photo_adherent_menusold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/firstName_adherent_menusold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_firstName_member_notice"
+            android:layout_toRightOf="@id/photo_adherent_menusold"
+            android:layout_below="@id/name_adherent_menusold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"/>
+
+    </RelativeLayout>
 
 </LinearLayout>

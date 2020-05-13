@@ -23,4 +23,18 @@
     <string name="notice_op"><u>Avis :</u></string>
     <string name="general_mark_op"><u>Note générale : </u></string>
     <string name="mark_op">0 / 5</string>
+    <string name="default_drink"><u>Boisson :</u></string>
+    <string name="drink_menusold">Aucune</string>
+    <string name="menusold"><u>Liste des menus vendus :</u></string>
+    <string name="menu_spent">Menus vendus</string>
+    <string name="different_menu">Menus dispos</string>
+    <string name="notice_op_button">Avis</string>
+    <string name="id_connexion">ID connexion</string>
+    <string name="password_connexion">Password</string>
+    <string name="connexion">Connexion</string>
+    <string name="exit">Quitter</string>
+    <string name="deconnexion">Déconnexion</string>
+    <string name="manage">Gérer OP\ndu jour</string>
+    <string name="add">+</string>
+    <string name="add_op">Ajouter une\nOP</string>
 </resources>
